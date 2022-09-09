@@ -507,20 +507,16 @@ _core__WEBPACK_IMPORTED_MODULE_0__["default"].prototype.click = function (handle
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _lib_lib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./lib/lib */ "./src/js/lib/lib.js");
- // $(".active").toggle().toggle();
-// $(".active").on("click", seyHello);
-// $(".active").off("click", seyHello);
 
-Object(_lib_lib__WEBPACK_IMPORTED_MODULE_0__["default"])("button").on("click", function () {
-  Object(_lib_lib__WEBPACK_IMPORTED_MODULE_0__["default"])("div").eq(2).toggleClass("active");
+Object(_lib_lib__WEBPACK_IMPORTED_MODULE_0__["default"])("#first").on("click", () => {
+  Object(_lib_lib__WEBPACK_IMPORTED_MODULE_0__["default"])("div").eq(1).fadeOut(800);
 });
-Object(_lib_lib__WEBPACK_IMPORTED_MODULE_0__["default"])("div").click(function () {
-  console.log(Object(_lib_lib__WEBPACK_IMPORTED_MODULE_0__["default"])(this).index());
-}); // console.log($("div").eq(2).find(".some"));
-// console.log($(".some").closest(".findme"));
-
-Object(_lib_lib__WEBPACK_IMPORTED_MODULE_0__["default"])("button").fadeOut(1800);
-Object(_lib_lib__WEBPACK_IMPORTED_MODULE_0__["default"])("button").fadeIn(2800);
+Object(_lib_lib__WEBPACK_IMPORTED_MODULE_0__["default"])("[data-count='second']").on("click", () => {
+  Object(_lib_lib__WEBPACK_IMPORTED_MODULE_0__["default"])("div").eq(2).fadeOut(800);
+});
+Object(_lib_lib__WEBPACK_IMPORTED_MODULE_0__["default"])("button").eq(2).on("click", () => {
+  Object(_lib_lib__WEBPACK_IMPORTED_MODULE_0__["default"])(".w-500").fadeOut(800);
+});
 
 /***/ })
 
