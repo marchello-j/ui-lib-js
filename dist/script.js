@@ -206,9 +206,9 @@ _core__WEBPACK_IMPORTED_MODULE_0__["default"].prototype.createModal = function (
 		</div>
 		`;
     modal.querySelector(".modal-footer").append(...buttons);
-    document.body.append(modal);
+    document.body.appendChild(modal);
     Object(_core__WEBPACK_IMPORTED_MODULE_0__["default"])(this[i]).modal(true);
-    Object(_core__WEBPACK_IMPORTED_MODULE_0__["default"])(this[i].getAttribute("data-targer")).fadeIn(500);
+    Object(_core__WEBPACK_IMPORTED_MODULE_0__["default"])(this[i].getAttribute("data-target")).fadeIn(500);
   }
 };
 

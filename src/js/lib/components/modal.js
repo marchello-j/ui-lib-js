@@ -77,8 +77,8 @@ $.prototype.createModal = function ({ text, btns } = {}) {
 		`;
 
 		modal.querySelector(".modal-footer").append(...buttons);
-		document.body.append(modal);
+		document.body.appendChild(modal);
 		$(this[i]).modal(true);
-		$(this[i].getAttribute("data-targer")).fadeIn(500);
+		$(this[i].getAttribute("data-target")).fadeIn(500);
 	}
 };
