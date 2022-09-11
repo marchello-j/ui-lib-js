@@ -25,3 +25,34 @@ $(".wrap").html(
 );
 
 $(".dropdown-toggle").dropdown();
+
+$("#trigger").click(() =>
+	$("#trigger").createModal({
+		text: {
+			title: "Modal title",
+			body: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aperiam quibusdam sunt blanditiis0",
+		},
+		btns: {
+			count: 3,
+			settings: [
+				["Close", ["btn-danger", "mr-10"], true],
+				[
+					"Save changes",
+					["btn-success"],
+					false,
+					() => {
+						alert("Данные сохранены");
+					},
+				],
+				[
+					"Another btn",
+					["btn-warning", "ml-10"],
+					false,
+					() => {
+						alert("Hello World");
+					},
+				],
+			],
+		},
+	})
+);
