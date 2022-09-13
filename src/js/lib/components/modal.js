@@ -75,10 +75,35 @@ $.prototype.createModal = function ({ text, btns } = {}) {
 			</div>
 		</div>
 		`;
+		// function calcScroll() {
+		// 	let div = document.createElement("div");
+		// 	div.style.width = "50px";
+		// 	div.style.height = "50px";
+		// 	div.style.overflowY = "scroll";
+		// 	div.style.overflowX = "hidden";
 
+		// 	document.body.appendChild(div);
+		// 	let scrollWidth = div.offsetWidth - div.clientWidth;
+		// 	div.remove();
+		// 	return scrollWidth;
+		// }
 		modal.querySelector(".modal-footer").append(...buttons);
 		document.body.appendChild(modal);
 		$(this[i]).modal(true);
 		$(this[i].getAttribute("data-target")).fadeIn(500);
 	}
 };
+
+// function calcScroll() {
+// 	let div = document.createElement("div");
+// 	div.style.width = "50px";
+// 	div.style.height = "50px";
+// 	div.style.overflowY = "scroll";
+// 	div.style.overflowX = "hidden";
+
+// 	document.body.appendChild(div);
+// 	let scrollWidth = div.offsetWidth - div.clientWidth;
+// 	div.remove();
+// 	return scrollWidth;
+// }
+// calcScroll();
