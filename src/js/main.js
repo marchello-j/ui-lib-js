@@ -57,3 +57,7 @@ $("#trigger").click(() =>
 		},
 	})
 );
+
+$()
+	.get("https://jsonplaceholder.typicode.com/todos/20")
+	.then((res) => console.log(res));
